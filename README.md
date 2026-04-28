@@ -10,25 +10,26 @@ The app includes authentication screens, password recovery flow, cards dashboard
 ## App Preview
 
 <p align="center">
-  <img src="screenshot/screenshot/Android Emulator - Pixel_7_5554 4_28_2026 2_11_44 PM.png" width="220"/>
-  <img src="screenshot/screenshot/Android Emulator - Pixel_7_5554 4_28_2026 2_12_16 PM.png" width="220"/>
-  <img src="screenshots/forgot_password.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_11_44%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_12_16%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_12_26%20PM.png" width="220"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/otp_verification.png" width="220"/>
-  <img src="screenshots/create_password.png" width="220"/>
-  <img src="screenshots/password_changed.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_12_36%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_12_46%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_12_56%20PM.png" width="220"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/home.png" width="220"/>
-  <img src="screenshots/statistics.png" width="220"/>
-  <img src="screenshots/cards.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_13_10%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_13_20%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_13_28%20PM.png" width="220"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/profile.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_13_35%20PM.png" width="220"/>
+  <img src="screenshot/Android%20Emulator%20-%20Pixel_7_5554%204_28_2026%202_13_42%20PM.png" width="220"/>
 </p>
 
 ---
@@ -71,20 +72,21 @@ The app includes authentication screens, password recovery flow, cards dashboard
 
 ## Screenshots Folder Structure
 
-Make sure your screenshots are inside a folder named `screenshots` like this:
+Make sure your screenshots are inside a folder named `screenshot` like this:
 
 ```text
-screenshots/
-├── welcome.png
-├── login.png
-├── forgot_password.png
-├── otp_verification.png
-├── create_password.png
-├── password_changed.png
-├── home.png
-├── statistics.png
-├── cards.png
-└── profile.png
+screenshot/
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_11_44 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_12_16 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_12_26 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_12_36 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_12_46 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_12_56 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_13_10 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_13_20 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_13_28 PM.png
+├── Android Emulator - Pixel_7_5554 4_28_2026 2_13_35 PM.png
+└── Android Emulator - Pixel_7_5554 4_28_2026 2_13_42 PM.png
 ```
 
 ---
