@@ -1,5 +1,6 @@
 import 'package:financi_ui/Core/Styling/Widgts/Spacing.dart';
 import 'package:financi_ui/Core/Styling/app_assets.dart';
+import 'package:financi_ui/Core/Styling/app_color.dart';
 import 'package:financi_ui/Core/Styling/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -48,7 +49,13 @@ class Gridviewcontent extends StatelessWidget {
                   alignment: .center,
                   child: Text(
                     title[index],
-                    style: AppStyle.interw60018black.copyWith(fontSize: 16.sp),
+                    maxLines: 1,
+                    softWrap: false,
+                    overflow: TextOverflow.visible,
+                    style: AppStyle.TextButtonstyle.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: AppColor.blackcolor2,
+                    ),
                   ),
                 ),
               ),
@@ -57,7 +64,15 @@ class Gridviewcontent extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 33.w),
                 child: Align(
                   alignment: .center,
-                  child: Text(subtitle[index], style: AppStyle.interw50012gray),
+                  child: Text(
+                    subtitle[index],
+                    maxLines: 1,
+                    softWrap: false,
+                    overflow: TextOverflow.visible,
+                    style: AppStyle.TextButtonstyle.copyWith(
+                      color: AppColor.Greycolor,
+                    ),
+                  ),
                 ),
               ),
             ],

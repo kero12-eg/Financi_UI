@@ -14,50 +14,58 @@ class Onboardingscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Image.asset(
-            'Assets/images/onboarding.png',
-            width: 375.w,
-            height: 570.h,
-            fit: BoxFit.cover,
-          ),
-          Spacing(height: 21.h),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 22.w),
-            child: Primarybutton(
-              title: "Login",
-              onpressed: () {
-                context.pushNamed(AppRouter.Login);
-              },
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.asset(
+              'Assets/images/onboarding.png',
+              width: 375.w,
+              height: 570.h,
+              fit: BoxFit.cover,
             ),
-          ),
-          Spacing(height: 15.h),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 21.w),
-            child: Outlinedbuttons(title: "Register", onpressed: () {
-              context.pushNamed(AppRouter.Register);
-            }),
-          ),
-          SizedBox(height: 46.h),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 121.w),
-            child: GestureDetector(
-              onTap: () {
-                context.pushNamed(AppRouter.Main);
-              },
-              child: Text(
-                "Continue as guest",
-                style: AppStyle.TextButtonstyle.copyWith(
-                  fontWeight: FontWeight.w700,
-                  color: AppColor.blackcolor2,
-                  decoration: TextDecoration.underline,
+            Spacing(height: 21.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 22.w),
+              child: Primarybutton(
+                title: "Login",
+                onpressed: () {
+                  context.pushNamed(AppRouter.Login);
+                },
+              ),
+            ),
+            Spacing(height: 15.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 21.w),
+              child: Outlinedbuttons(
+                title: "Register",
+                onpressed: () {
+                  context.pushNamed(AppRouter.Register);
+                },
+              ),
+            ),
+            SizedBox(height: 46.h),
+            Center(
+              child: GestureDetector(
+                onTap: () {
+                  context.pushNamed(AppRouter.Main);
+                },
+                child: Text(
+                  "Continue as guest",
+                  maxLines: 1,
+                  softWrap: false,
+                  textAlign: TextAlign.center,
+                  style: AppStyle.TextButtonstyle.copyWith(
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.w700,
+                    color: AppColor.blackcolor2,
+                    decoration: TextDecoration.underline,
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

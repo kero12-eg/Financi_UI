@@ -14,6 +14,7 @@ class Primarybutton extends StatelessWidget {
     this.textstyle,
     this.radius,
   });
+
   final double? width;
   final double? height;
   final Color? buttoncolor;
@@ -21,6 +22,7 @@ class Primarybutton extends StatelessWidget {
   final double? radius;
   final String title;
   final void Function() onpressed;
+
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -32,7 +34,10 @@ class Primarybutton extends StatelessWidget {
         ),
         fixedSize: Size(width ?? 331.w, height ?? 56.h),
       ),
-      child: Text(title, style: textstyle ?? AppStyle.TextButtonstyle),
+      child: Text(
+        title,
+        style: textstyle ?? AppStyle.TextButtonstyle,
+      ),
     );
   }
 }
