@@ -10,8 +10,8 @@ The app includes authentication screens, password recovery flow, cards dashboard
 ## App Preview
 
 <p align="center">
-  <img src="screenshots/welcome.png" width="220"/>
-  <img src="screenshots/login.png" width="220"/>
+  <img src="screenshot/screenshot/Android Emulator - Pixel_7_5554 4_28_2026 2_11_44 PM.png" width="220"/>
+  <img src="screenshot/screenshot/Android Emulator - Pixel_7_5554 4_28_2026 2_12_16 PM.png" width="220"/>
   <img src="screenshots/forgot_password.png" width="220"/>
 </p>
 
