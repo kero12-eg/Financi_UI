@@ -14,9 +14,9 @@ List<String> icons = [
 List<String> title = ["Send Money", "Pay The Bill", "Request", "Contact"];
 List<String> subtitle = [
   "Take acc to acc",
-  "Lorem ipsum",
-  "Lorem ipsum",
-  "Lorem ipsum",
+  "Bills & utilities",
+  "Request money",
+  "Contact support",
 ];
 
 class Gridviewcontent extends StatelessWidget {
