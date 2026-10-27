@@ -41,7 +41,13 @@ class Chartbar extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: .start,
                         children: [
-                          Image.asset(AppAssets.send_money1),
+                          Expanded(
+                            child: Image.asset(
+                              AppAssets.send_money1,
+                              fit: BoxFit.contain,
+                              alignment: Alignment.centerLeft,
+                            ),
+                          ),
                           Spacing(height: 12.h),
                           Text(
                             "15000 EG",
@@ -69,7 +75,13 @@ class Chartbar extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: .start,
                         children: [
-                          Image.asset(AppAssets.send_money2),
+                          Expanded(
+                            child: Image.asset(
+                              AppAssets.send_money2,
+                              fit: BoxFit.contain,
+                              alignment: Alignment.centerLeft,
+                            ),
+                          ),
                           Spacing(height: 12.h),
                           Text(
                             "35000 EG",

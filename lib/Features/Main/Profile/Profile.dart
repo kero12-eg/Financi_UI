@@ -28,11 +28,12 @@ class Profile extends StatelessWidget {
         centerTitle: true,
         actions: [Image.asset(AppAssets.Edit, width: 48.w, height: 48.h)],
       ),
-      body: Column(
-        crossAxisAlignment: .start,
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 137.w, vertical: 39.h),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: .start,
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 137.w, vertical: 39.h),
             child: CircleAvatar(
               backgroundImage: AssetImage(AppAssets.pro),
               radius: 30.r,
@@ -158,7 +159,7 @@ class Profile extends StatelessWidget {
               ),
             ),
           ),
-          Spacer(),
+          Spacing(height: 24.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 14.w),
             child: Primarybutton(
@@ -189,7 +190,8 @@ class Profile extends StatelessWidget {
               },
             ),
           ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -68,6 +68,16 @@ class CustomContent extends StatelessWidget {
   final size layer1size;
   final size layer2size;
 
+  /// A gap that shrinks when the card is too short, keeping the original
+  /// proportions between space1 / space2 / space3.
+  Widget _flexGap(double height) {
+    final flex = height.round();
+    return Expanded(
+      flex: flex > 0 ? flex : 1,
+      child: Spacing(height: height),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -151,7 +161,7 @@ class CustomContent extends StatelessWidget {
                         : Container(),
                   ],
                 ),
-                Spacing(height: space1.height ?? 57.h),
+                _flexGap(space1.height ?? 57.h),
                 Text(
                   content.balanceholder ?? "Balance",
                   style: AppStyle.interw50012gray.copyWith(
@@ -159,7 +169,7 @@ class CustomContent extends StatelessWidget {
                     color: c.color2 ?? AppColor.whitecolor.withOpacity(0.48),
                   ),
                 ),
-                Spacing(height: space2.height ?? 8.h),
+                _flexGap(space2.height ?? 8.h),
                 Text(
                   content.balance ?? "23400 EG",
                   style: AppStyle.Headlinestyle.copyWith(
@@ -167,7 +177,7 @@ class CustomContent extends StatelessWidget {
                     color: c.color3 ?? AppColor.whitecolor,
                   ),
                 ),
-                Spacing(height: space3.height ?? 60.h),
+                _flexGap(space3.height ?? 60.h),
                 Row(
                   children: [
                     Text(
